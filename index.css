@@ -1,0 +1,177 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+	background-color: #181818;
+	border-bottom: 2px solid #986beb;
+}
+
+.btn {
+	background-color: #986beb;
+	color: white;
+}
+
+.navbar-brand {
+	left: 3rem;
+	color: #986beb !important; /*violet color*/
+}
+
+.navbar-toggler {
+	background-color: #986beb !important;
+}
+
+div > ul > .nav-item > a {
+	color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #986beb;
+}
+
+.navbar-brand {
+	font-size: 1.8rem;
+	font-family: 'Pacifico', sans-serif !important;
+}
+
+.banner-container {
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    background-size: 100% 100%;
+    background-size: cover;
+    margin-top: 60px;
+    position: relative;
+}
+
+.banner-container > img {
+	width: 100%;
+}
+
+.banner-content {
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+}
+
+.banner-container #code {
+	color: #986beb;
+}
+
+.banner-container #test {
+	color: #f5b52c;
+}
+
+.banner-container #debug {
+	color: #986beb;
+}
+
+#about-me > div {
+	padding-top: 100px !important;
+}
+
+#about-me > div, #projects .card {
+	background-color: #181818;
+}
+
+#about-me #name {
+	color: #986beb;
+}
+
+/*#sub-description {
+	margin-left: 10rem;
+	margin-right: 10rem;
+}
+*/
+#languages > div, #projects > div {
+	background-color: #313030; /*dark image*/
+}
+
+#languages .fa-brands, .fa-solid, .fa {
+	font-size: 58px;
+	color: #986beb;
+}
+
+#languages .lang-txt {
+	color: white;
+}
+
+#languages #svg-languages {
+	filter: invert(45%) sepia(65%) saturate(861%) hue-rotate(222deg) brightness(96%) contrast(92%);
+}
+
+.bg-q {
+  padding: 0px;
+  background-image: url('images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.q-back {
+	padding: 60px 60px 60px 60px;
+	background-color: rgba(0, 0, 0, 0.37);
+	color: #FDFDFD !important;
+}
+
+/*projects header*/
+#projects > div > h4 {
+	font-weight: bold;
+	color: #986beb;
+}
+
+#projects > div {
+	padding-top: 100px !important;
+}
+
+#projects .card-title {
+	color: #986beb;
+	font-weight: bold;
+}
+
+#projects .card, .card > img {
+	border-radius: 20px;
+}
+
+#contactMe > div {
+	background-color: #e6e6fa;
+}
+
+#contactMe h2 {
+	color: #986beb;
+}
+
+#contactMe input {
+	width: 15rem;
+}
+
+#contactMe input:hover {
+	border: 2px solid #986beb;
+	border-radius: 5px;
+}
+
+#facebook {
+    height: 40px;
+    filter: invert(45%) sepia(65%) saturate(861%) hue-rotate(222deg) brightness(96%) contrast(92%);
+}
+
+/*footer text headers*/
+footer div > h4 {
+	font-size: 1.2rem;
+	color: #986beb;
+}
+
+footer address {
+	font-size: 0.9rem;
+}
+
+/*facebook & github icons*/
+footer a .fa-facebook, a .fa-github {
+	font-size: 2rem;
+}
