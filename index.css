@@ -175,3 +175,14 @@ footer address {
 footer a .fa-facebook, a .fa-github {
 	font-size: 2rem;
 }
+
+#rights-rcvd {
+	position: absolute;
+	width: 100%;
+	background-color: #e6e6fa;
+}
+
+#rights-rcvd > p {
+	font-size: 16px;
+	color: #986beb;
+}
