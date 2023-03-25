@@ -6,9 +6,18 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #181818;
+}
+
 nav {
 	background-color: #181818;
 	border-bottom: 2px solid #986beb;
+	animation: nav-anim 0.8s ease-in-out;
 }
 
 .btn {
@@ -27,6 +36,10 @@ nav {
 
 div > ul > .nav-item > a {
 	color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .selected {
+	color: #986beb
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -51,6 +64,11 @@ div > ul > .nav-item > a {
 
 .banner-container > img {
 	width: 100%;
+	animation: nav-anim 1s ease-in-out;
+}
+
+.banner-container h2 {
+	animation: banner-title-anim 0.8s ease-in-out;
 }
 
 .banner-content {
@@ -63,14 +81,23 @@ div > ul > .nav-item > a {
 
 .banner-container #code {
 	color: #986beb;
+	opacity: 0;
+	animation: banner-p-anim 0.8s ease-in-out forwards;
+	animation-delay: 0.3s;
 }
 
 .banner-container #test {
 	color: #f5b52c;
+	opacity: 0;
+	animation: banner-p-anim 0.8s ease-in-out forwards;
+	animation-delay: 0.5s;
 }
 
 .banner-container #debug {
-	color: #986beb;
+	color: #eb6f6b;
+	opacity: 0;
+	animation: banner-p-anim 0.8s ease-in-out forwards;
+	animation-delay: 0.7s;
 }
 
 #about-me > div {
@@ -104,6 +131,7 @@ div > ul > .nav-item > a {
 }
 
 #languages #svg-languages {
+	object-fit: cover;
 	filter: invert(45%) sepia(65%) saturate(861%) hue-rotate(222deg) brightness(96%) contrast(92%);
 }
 
@@ -137,6 +165,7 @@ div > ul > .nav-item > a {
 
 #projects .card, .card > img {
 	border-radius: 20px;
+	padding: 5px;
 }
 
 #contactMe > div {
@@ -176,13 +205,35 @@ footer a .fa-facebook, a .fa-github {
 	font-size: 2rem;
 }
 
-#rights-rcvd {
-	position: absolute;
-	width: 100%;
-	background-color: #e6e6fa;
+/*Animations*/
+@keyframes nav-anim {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
-#rights-rcvd > p {
-	font-size: 16px;
-	color: #986beb;
+@keyframes 	banner-title-anim {
+	0% { 
+		opacity: 0;
+		letter-spacing: 3px;
+		transform: translateX(-150px); 
+	}
+	50% { opacity: 1; }
+	100% {
+		transform: translateX(0); 
+	}
+}
+
+@keyframes banner-p-anim {
+	0% {
+		opacity: 0;
+		transform: translateY(-150px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
 }
